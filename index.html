@@ -1,1223 +1,642 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shashanka B C — Web Designer & Developer | WebCraft</title>
+<meta name="description" content="Shashanka B C — web designer and developer creating modern websites, digital invitations and WhatsApp-integrated business solutions.">
+<meta property="og:title" content="Shashanka B C — Web Designer & Developer">
+<meta property="og:description" content="Modern websites, digital invitations and business solutions that help brands grow online.">
+<meta property="og:image" content="images/profile.png">
+<link rel="icon" href="images/logo.png">
 
-<title>WebCraft Portfolio</title>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-
-
-.custom-toggler {
-  background: #1a0f0a;
-  border: 1px solid #ff7a00;
-  border-radius: 10px;
-  padding: 6px 10px;
-}
-
-/* Hamburger lines color */
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,\
-  %3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E\
-  %3Cpath stroke='rgba(255,122,0,1)' stroke-width='2' stroke-linecap='round'\
-  stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-/* Hover effect */
-.custom-toggler:hover {
-  background: #2a1a12;
-  box-shadow: 0 0 10px rgba(255,122,0,0.5);
-}
-
-    img {
-  max-width: 100%;
-  height: auto;
-}
-
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background: radial-gradient(circle at top, #2a1a12, #1a0f0a);
-  color: #fff;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-h2 {
-  color: #ff7a00;
-  font-weight: 600;
-  margin-bottom: 30px;
-}
-
-/* Navbar */
-.navbar {
-  background: #1a0f0a;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.navbar-toggler {
-  background-color: white;
-}
-
-.navbar a {
-  color: #fff !important;
-}
-
-.logo {
-  height: 50px;
-}
-
-/* Hero */
-.hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-}
-
-.hero-title {
-  font-size: 2.8rem;
-  font-weight: 700;
-}
-
-.hero-title span {
-  color: #ff7a00;
-}
-
-.hero-text {
-  margin: 15px 0 25px;
-  opacity: 0.8;
-}
-
-.hero-card {
-  background: linear-gradient(145deg, #2a1a12, #1a0f0a);
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-}
-
-.hero-img {
-  max-width: 350px;
-  border-radius: 20px;
-}
-
-.hero-services span {
-  display: inline-block;
-  margin: 5px 10px 0 0;
-  padding: 6px 12px;
-  border: 1px solid rgba(255,122,0,0.3);
-  border-radius: 20px;
-  font-size: 14px;
-}
-
-/* Buttons */
-.btn-orange {
-  background: #ff7a00;
-  color: white;
-  box-shadow: 0 5px 20px rgba(255,122,0,0.4);
-}
-
-/* Sections */
-.section {
-  padding: 80px 0;
-}
-
-/* Services */
-.service-box {
-  background: linear-gradient(145deg, #2a1a12, #1a0f0a);
-  padding: 30px;
-  border-radius: 15px;
-  transition: 0.3s;
-  border: 1px solid rgba(255,122,0,0.1);
-  height: 100%;
-}
-
-.service-box:hover {
-  transform: translateY(-10px);
-  border-color: #ff7a00;
-}
-
-.icon {
-  font-size: 40px;
-}
-
-/* Portfolio */
-.portfolio-card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 15px;
-}
-
-.portfolio-card img {
-  width: 100%;
-  transition: 0.4s;
-}
-
-.portfolio-card:hover img {
-  transform: scale(1.1);
-}
-
-#portfolio h4 {
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
-#portfolio p {
-  font-size: 14px;
-  opacity: 0.85;
-}
-
-#portfolio img {
-  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
-}
-
-#portfolio img:hover {
-  transform: scale(1.03);
-  transition: 0.3s;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0,0,0,0.7);
-  text-align: center;
-  padding: 15px;
-  opacity: 0;
-  transition: 0.3s;
-}
-
-.portfolio-card:hover .overlay {
-  opacity: 1;
-}
-
-.btn-lg {
-  padding: 12px 30px;
-  font-size: 16px;
-  border-radius: 30px;
-}
-
-.btn-orange:hover {
-  background: #ff8c1a;
-  transform: translateY(-2px);
-  transition: 0.3s;
-}
-
-/* Footer */
-.footer {
-  background: #0d0704;
-  text-align: center;
-  padding: 20px;
-}
-
-/* WhatsApp */
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25D366;
-  padding: 12px 16px;
-  border-radius: 50px;
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .hero {
-    text-align: center;
-    padding: 80px 0;
-  }
-
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .hero-text {
-    font-size: 14px;
-  }
-
-  .hero-img {
-    max-width: 220px;
-    margin-top: 25px;
-  }
-
-  .hero-services span {
-    display: inline-block;
-    margin: 5px;
-  }
-}
-
-@media (max-width: 768px) {
-  .service-box {
-    padding: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  #portfolio .row {
-    text-align: center;
-  }
-
-  #portfolio img {
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .btn {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  .section {
-    padding: 50px 15px;
-  }
-}
-
-/* GLOBAL FIX */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* MOBILE RESPONSIVE */
-@media (max-width: 768px) {
-
-  /* HERO */
-  .hero {
-    text-align: center;
-    padding: 70px 15px;
-  }
-
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .hero-text {
-    font-size: 14px;
-  }
-
-  .hero-img {
-    max-width: 220px;
-    margin-top: 20px;
-  }
-
-  .hero-services {
-    justify-content: center;
-  }
-
-  /* BUTTONS */
-  .btn {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  /* SERVICES */
-  .service-box {
-    padding: 20px;
-  }
-
-  /* CASE STUDY / PORTFOLIO */
-  #portfolio .row {
-    text-align: center;
-  }
-
-  #portfolio img {
-    margin-bottom: 20px;
-  }
-
-  /* VIEW MORE BUTTON */
-  .btn-lg {
-    width: 100%;
-  }
-
-  /* NAVBAR */
-  .navbar-toggler {
-    background: #fff;
-  }
-
-  /* SECTIONS */
-  .section {
-    padding: 50px 15px;
-  }
-}
-
-@media (max-width: 768px) {
-  #case-study img {
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  #case-study .row {
-    margin-bottom: 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  #case-study h4 {
-    margin-top: 10px;
-    font-size: 20px;
-  }
-
-  #case-study p {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-}
-
-
-.contact-box {
-  max-width: 700px;
-  margin: auto;
-  padding: 30px;
-  background: #050505;
-  border-radius: 20px;
-  box-shadow: 0 0 30px #ff7a00;
-}
-
-.contact-box input,
-.contact-box select,
-.contact-box textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
-  background: transparent;
-  border: 1px solid #ff7a00;
-  border-radius: 10px;
-  color: #fff;
-  outline: none;
-}
-
-.contact-box input::placeholder,
-.contact-box textarea::placeholder {
-  color: #aaa;
-}
-
-.contact-box select {
-  color: #aaa;
-}
-
-.contact-box button {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  background: #ff7a00;
-  color: white;
-  font-size: 16px;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-
-
-.contact-box button:hover {
-  background: #ff7a00;
-}
-
-.myskills-title {
-  cursor: pointer;
-  color: #ff7a00;
-}
-
-/* Hidden by default */
-.myskills-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.7s ease;
-}
-
-/* When open */
-.myskills-content.active {
-  max-height: 2000px;
-}
-
-/* Section titles */
-#technologies h4 {
-  color: #ff7a00;
-}
-
-@media (max-width: 768px) {
-  .contact-box {
-    padding: 20px;
-  }
-}
-
-#technologies .service-box:hover .icon {
-  transform: scale(1.2);
-  transition: 0.3s;
-}
-
-.social-icons a {
-  margin: 0 10px;
-  color: #aaa;
-  text-decoration: none;
-  font-size: 14px;
-  transition: 0.3s;
-}
-
-.social-icons a:hover {
-  color: #ff7a00;
-}
-
-.social-icons a {
-  margin: 0 10px;
-  font-size: 20px;
-  color: #aaa;
-  transition: 0.3s;
-}
-
-.social-icons a:hover {
-  color: #ff7a00;
-  transform: scale(1.2);
-}
-
-.social-icons a {
-  margin: 0 10px;
-  color: #aaa;
-  text-decoration: none;
-  font-size: 14px;
-  transition: 0.3s;
-}
-
-.social-icons a:hover {
-  color: #ff7a00;
-}
-
-.social-icons a {
-  margin: 0 10px;
-  font-size: 20px;
-  color: #aaa;
-  transition: 0.3s;
-}
-
-.social-icons a:hover {
-  color: #ff7a00;
-  transform: scale(1.2);
+:root{
+  --bg:#120b07;
+  --bg-2:#1a110b;
+  --surface:#21160f;
+  --surface-2:#2a1c13;
+  --line:rgba(255,255,255,.08);
+  --line-strong:rgba(255,255,255,.14);
+  --text:#f6efe9;
+  --muted:#b9aca2;
+  --accent:#ff7a00;
+  --accent-2:#ffa24d;
+  --accent-soft:rgba(255,122,0,.12);
+  --radius:18px;
+  --maxw:1160px;
+  --head:'Plus Jakarta Sans',system-ui,sans-serif;
+  --body:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--body);background:var(--bg);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+/* ---------- Typography ---------- */
+h1,h2,h3,h4{font-family:var(--head);line-height:1.15;letter-spacing:-.02em}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--accent);border-radius:2px}
+.section{padding:110px 0}
+.section-head{max-width:640px;margin:0 auto 56px;text-align:center}
+.section-head .eyebrow::before{display:none}
+.section-head h2{font-size:clamp(2rem,4vw,2.75rem);font-weight:800;margin:12px 0 14px}
+.section-head p{color:var(--muted);font-size:1.05rem}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:.95rem;border:1px solid transparent;cursor:pointer;transition:transform .25s,box-shadow .25s,background .25s,border-color .25s;font-family:var(--body)}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 10px 30px -8px rgba(255,122,0,.6)}
+.btn-primary:hover{background:#ff8a1f;transform:translateY(-2px);box-shadow:0 14px 34px -8px rgba(255,122,0,.75)}
+.btn-ghost{border-color:var(--line-strong);color:var(--text)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+.btn-link{color:var(--accent);font-weight:600;display:inline-flex;align-items:center;gap:8px}
+.btn-link i{transition:transform .25s}
+.btn-link:hover i{transform:translateX(4px)}
+
+/* ---------- Navbar ---------- */
+.nav{position:fixed;inset:0 0 auto 0;z-index:100;transition:background .3s,border-color .3s,backdrop-filter .3s;border-bottom:1px solid transparent}
+.nav.scrolled{background:rgba(18,11,7,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--head);font-weight:700;font-size:1.05rem}
+.brand img{height:44px;width:auto;border-radius:8px}
+.nav-links{display:flex;align-items:center;gap:6px}
+.nav-links a{padding:8px 14px;border-radius:999px;font-size:.92rem;color:var(--muted);transition:color .2s,background .2s}
+.nav-links a:hover{color:var(--text);background:rgba(255,255,255,.05)}
+.nav-links .btn{margin-left:10px;padding:10px 20px;color:#fff}
+.nav-links .btn:hover{background:#ff8a1f;color:#fff}
+.nav-toggle{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line-strong);background:transparent;color:var(--text);font-size:1.1rem;cursor:pointer}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;padding:150px 0 90px;overflow:hidden}
+.hero::before{content:"";position:absolute;width:780px;height:780px;right:-220px;top:-200px;background:radial-gradient(circle,rgba(255,122,0,.18),transparent 62%);pointer-events:none}
+.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 30% 40%,#000 10%,transparent 65%);-webkit-mask-image:radial-gradient(ellipse at 30% 40%,#000 10%,transparent 65%);opacity:.5;pointer-events:none}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+.status{display:inline-flex;align-items:center;gap:10px;padding:7px 14px 7px 10px;border-radius:999px;background:var(--surface);border:1px solid var(--line);font-size:.85rem;color:var(--muted);margin-bottom:26px}
+.status .dot{width:8px;height:8px;border-radius:50%;background:#2ecc71;box-shadow:0 0 0 4px rgba(46,204,113,.18)}
+.hero h1{font-size:clamp(2.6rem,5.6vw,4.2rem);font-weight:800}
+.hero h1 .hl{background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .role{font-family:var(--head);font-size:clamp(1.05rem,1.8vw,1.25rem);font-weight:600;color:var(--text);margin:18px 0 14px;opacity:.92}
+.hero .lead{color:var(--muted);font-size:1.07rem;max-width:520px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin:34px 0 40px}
+.hero-points{display:flex;flex-wrap:wrap;gap:12px 28px;padding-top:28px;border-top:1px solid var(--line);max-width:520px}
+.hero-points li{display:flex;align-items:center;gap:10px;font-size:.92rem;color:var(--muted)}
+.hero-points i{color:var(--accent);font-size:.95rem}
+
+/* ---------- Hero photo (the fix) ---------- */
+.photo-wrap{position:relative;width:100%;max-width:440px;margin-left:auto}
+.photo{
+  position:relative;
+  aspect-ratio:4/5;
+  border-radius:240px 240px 28px 28px;   /* arch shape */
+  overflow:hidden;
+  background:
+    radial-gradient(120% 80% at 50% 100%,rgba(255,122,0,.55),transparent 60%),
+    linear-gradient(180deg,#2c1d13 0%,#3a2213 55%,#5a2c0c 100%);
+  border:1px solid rgba(255,122,0,.25);
+  box-shadow:0 40px 80px -30px rgba(0,0,0,.8),inset 0 1px 0 rgba(255,255,255,.06);
+}
+.photo::before{ /* soft rings behind subject */
+  content:"";position:absolute;left:50%;top:22%;width:78%;aspect-ratio:1;transform:translateX(-50%);
+  border-radius:50%;border:1px solid rgba(255,255,255,.07);
+  box-shadow:0 0 0 40px rgba(255,255,255,.02),0 0 0 80px rgba(255,255,255,.015);
+}
+.photo img{
+  /* The PNG is a cut-out with empty space above/left of the subject.
+     Anchor it to the bottom, scale it up a little and shift it so the
+     subject is centred and fills the frame at every screen size. */
+  position:absolute;bottom:0;left:50%;
+  height:106%;width:auto;max-width:none;
+  transform:translateX(-59%);
+  filter:drop-shadow(0 20px 30px rgba(0,0,0,.45));
+}
+.photo-wrap::after{ /* offset outline frame */
+  content:"";position:absolute;inset:18px -18px -18px 18px;border-radius:240px 240px 28px 28px;border:1px solid rgba(255,122,0,.28);z-index:-1}
+.chip{position:absolute;display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:16px;background:rgba(33,22,15,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line-strong);box-shadow:0 20px 40px -14px rgba(0,0,0,.7);font-size:.85rem;white-space:nowrap}
+.chip .ic{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font-size:.95rem}
+.chip strong{display:block;font-family:var(--head);font-size:.92rem}
+.chip span{color:var(--muted);font-size:.78rem}
+.chip-1{left:-34px;top:30%;animation:float 6s ease-in-out infinite}
+.chip-2{right:-24px;bottom:12%;animation:float 6s ease-in-out infinite 1.5s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+/* ---------- Strip ---------- */
+.strip{border-block:1px solid var(--line);background:var(--bg-2)}
+.strip .container{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;padding-block:26px}
+.strip li{display:flex;align-items:center;gap:12px;color:var(--muted);font-weight:500;font-size:.95rem}
+.strip i{color:var(--accent)}
+
+/* ---------- Services ---------- */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:linear-gradient(180deg,var(--surface),var(--bg-2));border:1px solid var(--line);border-radius:var(--radius);padding:32px;transition:transform .3s,border-color .3s,box-shadow .3s}
+.card:hover{transform:translateY(-6px);border-color:rgba(255,122,0,.4);box-shadow:0 24px 50px -24px rgba(255,122,0,.35)}
+.card .ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font-size:1.25rem;margin-bottom:22px;border:1px solid rgba(255,122,0,.2)}
+.card h3{font-size:1.15rem;font-weight:700;margin-bottom:10px}
+.card p{color:var(--muted);font-size:.95rem}
+
+/* ---------- Skills ---------- */
+.skills{background:var(--bg-2);border-block:1px solid var(--line)}
+.skill-groups{display:grid;grid-template-columns:1fr 1fr 2fr;gap:22px}
+.skill-group{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+.skill-group h3{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:18px}
+.skill-list{display:flex;flex-wrap:wrap;gap:10px}
+.skill{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:12px;background:var(--bg-2);border:1px solid var(--line);font-weight:500;font-size:.92rem;transition:border-color .25s,transform .25s}
+.skill:hover{border-color:rgba(255,122,0,.45);transform:translateY(-2px)}
+.skill i{font-size:1.1rem}
+
+/* ---------- Case studies ---------- */
+.cases{display:flex;flex-direction:column;gap:90px}
+.case{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.case.reverse .case-media{order:2}
+.case-media{position:relative;border-radius:22px;padding:14px;background:linear-gradient(160deg,var(--surface-2),var(--bg-2));border:1px solid var(--line)}
+.case-media img{width:100%;border-radius:14px;aspect-ratio:16/11;object-fit:cover;object-position:top;transition:transform .6s}
+.case-media .frame{overflow:hidden;border-radius:14px}
+.case:hover .case-media img{transform:scale(1.03)}
+.case-num{font-family:var(--head);font-size:.85rem;font-weight:700;color:var(--accent);letter-spacing:.1em}
+.case h3{font-size:clamp(1.5rem,2.6vw,2rem);font-weight:800;margin:10px 0 22px}
+.case-tag{display:inline-block;font-size:.75rem;font-weight:600;padding:5px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent-2);margin-left:10px;vertical-align:middle;letter-spacing:.04em}
+.psr{display:flex;flex-direction:column;gap:16px;margin-bottom:28px}
+.psr div{padding-left:18px;border-left:2px solid var(--line-strong)}
+.psr div:last-child{border-color:var(--accent)}
+.psr b{display:block;font-family:var(--head);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.psr p{color:var(--text);opacity:.9}
+.psr ul{margin-top:8px;display:grid;gap:6px}
+.psr li{display:flex;gap:10px;color:var(--muted);font-size:.95rem}
+.psr li i{color:var(--accent);font-size:.8rem;margin-top:7px}
+
+/* ---------- Video ---------- */
+.video-card{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--line);background:#000;box-shadow:0 30px 70px -30px rgba(0,0,0,.9)}
+.video-card video{width:100%;aspect-ratio:16/9;object-fit:cover}
+.play-btn{position:absolute;inset:0;margin:auto;width:84px;height:84px;border-radius:50%;border:none;background:var(--accent);color:#fff;font-size:1.5rem;display:grid;place-items:center;cursor:pointer;box-shadow:0 0 0 12px rgba(255,122,0,.2),0 0 0 26px rgba(255,122,0,.08);transition:transform .25s}
+.play-btn:hover{transform:scale(1.08)}
+.play-btn i{margin-left:4px}
+
+.more{text-align:center;margin-top:80px}
+
+/* ---------- Contact ---------- */
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:stretch}
+.contact-info{background:linear-gradient(160deg,#3a2213,#1d130c);border:1px solid rgba(255,122,0,.25);border-radius:22px;padding:40px;display:flex;flex-direction:column}
+.contact-info h3{font-size:1.6rem;font-weight:800;margin-bottom:12px}
+.contact-info > p{color:var(--muted);margin-bottom:30px}
+.contact-item{display:flex;align-items:center;gap:16px;padding:16px 0;border-top:1px solid var(--line)}
+.contact-item .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.06);color:var(--accent);flex-shrink:0}
+.contact-item small{display:block;color:var(--muted);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+.contact-item a,.contact-item span{font-weight:600;word-break:break-all}
+.contact-item a:hover{color:var(--accent)}
+.socials{display:flex;gap:10px;margin-top:auto;padding-top:26px}
+.socials a{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;border:1px solid var(--line-strong);color:var(--muted);transition:all .25s}
+.socials a:hover{color:#fff;background:var(--accent);border-color:var(--accent);transform:translateY(-3px)}
+
+.form{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:40px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:.85rem;font-weight:500;color:var(--muted);margin-bottom:8px}
+.field input,.field select,.field textarea{width:100%;padding:14px 16px;border-radius:12px;background:var(--bg-2);border:1px solid var(--line-strong);color:var(--text);font:inherit;font-size:.95rem;transition:border-color .2s,box-shadow .2s;outline:none}
+.field textarea{resize:vertical;min-height:130px}
+.field select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath d='M1 1.5l5 5 5-5' stroke='%23b9aca2' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:40px}
+.field select option{background:var(--surface);color:var(--text)}
+.field input::placeholder,.field textarea::placeholder{color:#7d7068}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--accent);box-shadow:0 0 0 4px rgba(255,122,0,.15)}
+.form .btn{width:100%;padding:16px}
+.form-note{text-align:center;color:var(--muted);font-size:.82rem;margin-top:14px}
+
+/* ---------- Footer ---------- */
+.footer{border-top:1px solid var(--line);background:#0c0704;padding:70px 0 30px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:50px}
+.footer p{color:var(--muted);font-size:.93rem;max-width:340px;margin-top:16px}
+.footer h4{font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text);margin-bottom:18px}
+.footer ul{display:grid;gap:10px}
+.footer ul a,.footer ul li{color:var(--muted);font-size:.93rem;transition:color .2s}
+.footer ul a:hover{color:var(--accent)}
+.footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:26px;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+.footer-bottom a{color:var(--accent)}
+
+/* ---------- WhatsApp ---------- */
+.whatsapp{position:fixed;right:24px;bottom:24px;z-index:90;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(37,211,102,.6);transition:transform .25s}
+.whatsapp:hover{transform:scale(1.08)}
+.whatsapp img{width:30px;height:30px}
+
+/* ---------- Reveal ---------- */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.chip{animation:none}html{scroll-behavior:auto}}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1024px){
+  .hero-grid{gap:40px}
+  .skill-groups{grid-template-columns:1fr 1fr}
+  .skill-groups .skill-group:last-child{grid-column:1/-1}
+  .chip-1{left:-10px}.chip-2{right:-6px}
+}
+@media (max-width:900px){
+  .section{padding:84px 0}
+  .nav-toggle{display:grid;place-items:center}
+  .nav-links{position:absolute;top:76px;left:16px;right:16px;flex-direction:column;align-items:stretch;gap:4px;padding:14px;background:rgba(26,17,11,.97);backdrop-filter:blur(14px);border:1px solid var(--line-strong);border-radius:18px;opacity:0;visibility:hidden;transform:translateY(-8px);transition:all .25s}
+  .nav-links.open{opacity:1;visibility:visible;transform:none}
+  .nav-links a{padding:12px 16px}
+  .nav-links .btn{margin:6px 0 0}
+  .nav{background:rgba(18,11,7,.85);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
+
+  .hero{padding:120px 0 70px}
+  .hero-grid{grid-template-columns:1fr;text-align:center}
+  .hero .lead,.hero-points{margin-left:auto;margin-right:auto}
+  .hero-cta,.hero-points{justify-content:center}
+  .photo-wrap{order:-1;max-width:340px;margin:0 auto 10px}
+  .grid-3{grid-template-columns:1fr 1fr}
+  .case,.case.reverse{grid-template-columns:1fr;gap:30px}
+  .case.reverse .case-media{order:0}
+  .contact-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .footer-grid > div:first-child{grid-column:1/-1}
+}
+@media (max-width:600px){
+  .container{padding:0 18px}
+  .section{padding:70px 0}
+  .section-head{margin-bottom:40px}
+  .photo-wrap{max-width:290px}
+  .photo-wrap::after{inset:12px -12px -12px 12px}
+  .chip{display:none}
+  .hero-cta .btn{flex:1 1 100%}
+  .hero-points{gap:10px 20px}
+  .strip .container{justify-content:center;gap:14px 24px}
+  .grid-3,.skill-groups,.form-row{grid-template-columns:1fr}
+  .card,.skill-group{padding:24px}
+  .cases{gap:64px}
+  .contact-info,.form{padding:26px}
+  .footer-grid{grid-template-columns:1fr}
+  .whatsapp{right:16px;bottom:16px;width:54px;height:54px}
 }
-
-@media (max-width: 768px) {
-  .social-icons a {
-    font-size: 18px;
-  }
-}
-
-/* TECHNOLOGIES GLOW EFFECT */
-#technologies .service-box {
-  position: relative;
-  overflow: hidden;
-  transition: 0.4s;
-}
-
-/* Glow border animation */
-#technologies .service-box::before {
-  content: "";
-  position: absolute;
-  inset: -2px;
-  border-radius: 15px;
-  background: linear-gradient(45deg, #ff7a00, #ff00cc, #00f0ff, #ff7a00);
-  background-size: 300%;
-  z-index: 0;
-  opacity: 0;
-  transition: 0.4s;
-}
-
-/* Inner content */
-#technologies .service-box > * {
-  position: relative;
-  z-index: 1;
-}
-
-/* Hover glow */
-#technologies .service-box:hover::before {
-  opacity: 1;
-  animation: glowMove 3s linear infinite;
-}
-
-/* Glow animation */
-@keyframes glowMove {
-  0% { background-position: 0% }
-  100% { background-position: 300% }
-}
-
-/* Icon animation */
-#technologies .icon {
-  transition: 0.4s;
-}
-
-/* Hover icon effect */
-#technologies .service-box:hover .icon {
-  transform: scale(1.3) rotate(5deg);
-  filter: drop-shadow(0 0 10px currentColor);
-}
-
-/* Text glow */
-#technologies .service-box:hover h6 {
-  color: #fff;
-  text-shadow: 0 0 10px #ff7a00;
-}
-
-/* VIDEO CARD */
-.video-card {
-  position: relative;
-  border-radius: 20px;
-  overflow: hidden;
-  cursor: pointer;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
-}
-
-/* VIDEO STYLE */
-.video-preview {
-  width: 100%;
-  display: block;
-  transition: 0.4s;
-}
-
-/* HOVER EFFECT */
-
-
-/* PLAY BUTTON */
-.play-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(255,122,0,0.9);
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 24px;
-  transition: 0.3s;
-}
-
-/* PLAY BUTTON HOVER */
-.play-btn:hover {
-  transform: translate(-50%, -50%) scale(1.1);
-  box-shadow: 0 0 20px #ff7a00;
-}
-
-/* ===== MY SKILLS SPACING FIX ===== */
-
-/* Space between sections */
-#technologies h4 {
-  margin-top: 50px;
-  margin-bottom: 20px;
-  position: relative;
-  display: inline-block;
-}
-
-/* Underline effect for headings */
-#technologies h4::after {
-  content: "";
-  display: block;
-  width: 40%;
-  height: 2px;
-  background: #ff7a00;
-  margin: 8px auto 0;
-  border-radius: 2px;
-}
-
-/* Add spacing between rows */
-#technologies .row {
-  margin-bottom: 25px;
-}
-
-/* Better card spacing */
-#technologies .service-box {
-  padding: 25px 15px;
-}
-
-/* Center section nicely */
-#technologies {
-  text-align: center;
-}
-
-/* Smooth opening animation */
-.myskills-content {
-  transition: all 0.5s ease;
-}
-
-/* ===== MOBILE IMPROVEMENTS ===== */
-@media (max-width: 768px) {
-
-  /* Reduce section gaps */
-  .section {
-    padding: 40px 15px;
-  }
-
-  /* Headings smaller */
-  h2 {
-    font-size: 22px;
-  }
-
-  h4 {
-    font-size: 18px;
-  }
-
-  /* Improve My Skills spacing */
-  #technologies h4 {
-    margin-top: 30px;
-  }
-
-  /* Better grid spacing */
-  #technologies .row {
-    margin-bottom: 15px;
-  }
-
-  /* Cards tighter */
-  .service-box {
-    padding: 18px;
-  }
-
-  /* Video section fix */
-  .video-card {
-    margin-bottom: 20px;
-  }
-
-  /* Fix buttons full width */
-  .btn {
-    width: 100%;
-  }
-}
-
 </style>
 </head>
-
 <body>
 
-
-    
-
-<!-- Navbar -->
-
-<div class="row align-items-center">
-
-  <div class="col-lg-6 col-md-6 col-12">
-    <!-- text -->
-  </div>
-
-  <div class="col-lg-6 col-md-6 col-12 text-center">
-    <!-- image -->
-  </div>
-
-</div>
-
-<nav class="navbar navbar-expand-lg">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="images/logo.png" class="logo">
+<!-- ===== Navbar ===== -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="brand" aria-label="WebCraft home">
+      <img src="images/logo.png" alt="WebCraft logo">
     </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Portfolio</a>
+      <a href="#contact" class="btn btn-primary">Hire Me</a>
+    </nav>
+  </div>
+</header>
 
-   <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-  <span class="navbar-toggler-icon"></span>
-</button>
+<main>
 
-    <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="#technologies">My Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#case-study">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+<!-- ===== Hero ===== -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="reveal">
+      <div class="status"><span class="dot"></span>Available for new projects</div>
+      <h1>Hi, I'm <span class="hl">Shashanka</span></h1>
+      <p class="role">Web Designer · Developer · Digital Invitation Creator</p>
+      <p class="lead">I create modern websites, digital invitations, and business solutions that help brands grow online.</p>
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+        <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+      </div>
+      <ul class="hero-points">
+        <li><i class="fas fa-bolt"></i>Fast Delivery</li>
+        <li><i class="fas fa-handshake"></i>Client-Focused</li>
+        <li><i class="fas fa-mobile-screen"></i>Fully Responsive</li>
       </ul>
     </div>
-  </div>
-</nav>
 
-<!-- Hero -->
-<section class="hero">
-  <div class="container">
-    <div class="row align-items-center">
-
-      <div class="col-lg-6">
-        <h1 class="hero-title">Hi, I'm <span>Shashanka</span></h1>
-        <h4>Web Designer • Developer • Digital Invitation Creator</h4>
-
-        <p class="hero-text">
-          I create modern websites, digital invitations, and business solutions that help brands grow online.
-        </p>
-
-        <a href="#case-study" class="btn btn-orange me-2">View Work</a>
-        <a href="#contact" class="btn btn-outline-light">Hire Me</a>
-
-        <p class="mt-3 text">
-          🚀 Fast Delivery | 💼 Client-Focused | 📱 Fully Responsive
-        </p>
-
-        <div class="hero-services mt-3">
-          <span>🌐 Websites</span>
-          <span>💌 Invitations</span>
-          <span>⚡ Integrations</span>
-        </div>
+    <div class="photo-wrap reveal">
+      <div class="photo">
+        <img src="images/profile.png" alt="Shashanka B C, web designer and developer" width="408" height="612" fetchpriority="high">
       </div>
-
-      <div class="col-lg-6 text-center">
-        <div class="hero-card">
-          <img src="images/profile.png" class="hero-img">
-        </div>
+      <div class="chip chip-1">
+        <div class="ic"><i class="fas fa-code"></i></div>
+        <div><strong>Web Developer</strong><span>HTML · CSS · JS</span></div>
       </div>
-
+      <div class="chip chip-2">
+        <div class="ic"><i class="fas fa-pen-nib"></i></div>
+        <div><strong>UI/UX Designer</strong><span>Figma · Adobe XD</span></div>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- ===== Strip ===== -->
+<div class="strip">
+  <ul class="container">
+    <li><i class="fas fa-globe"></i>Websites</li>
+    <li><i class="fas fa-envelope-open-text"></i>Digital Invitations</li>
+    <li><i class="fab fa-whatsapp"></i>WhatsApp Integrations</li>
+    <li><i class="fas fa-wand-magic-sparkles"></i>AI Videos</li>
+  </ul>
+</div>
 
-
-<!-- Services -->
-<section id="services" class="section text-center">
+<!-- ===== Services ===== -->
+<section class="section" id="services">
   <div class="container">
-    <h2>My Services</h2>
-
-    <div class="row g-4">
-      <div class="col-md-4"><div class="service-box"><div class="icon">🌐</div><h5>Website Design</h5></div></div>
-      <div class="col-md-4"><div class="service-box"><div class="icon">💻</div><h5>Web Development</h5></div></div>
-      <div class="col-md-4"><div class="service-box"><div class="icon">📱</div><h5>Responsive Design</h5></div></div>
-      <div class="col-md-4"><div class="service-box"><div class="icon">🎨</div><h5>UI/UX Design</h5></div></div>
-      <div class="col-md-4"><div class="service-box"><div class="icon">⚡</div><h5>Optimization</h5></div></div>
-      <div class="col-md-4"><div class="service-box"><div class="icon">💬</div><h5>WhatsApp Integration</h5></div></div>
+    <div class="section-head reveal">
+      <span class="eyebrow">What I do</span>
+      <h2>Services</h2>
+      <p>Everything you need to look professional online, from first design to launch.</p>
+    </div>
+    <div class="grid-3">
+      <article class="card reveal"><div class="ic"><i class="fas fa-palette"></i></div><h3>Website Design</h3><p>Clean, modern layouts that reflect your brand and make a strong first impression.</p></article>
+      <article class="card reveal"><div class="ic"><i class="fas fa-laptop-code"></i></div><h3>Web Development</h3><p>Fast, hand-coded websites built with HTML, CSS, JavaScript and Bootstrap.</p></article>
+      <article class="card reveal"><div class="ic"><i class="fas fa-mobile-screen-button"></i></div><h3>Responsive Design</h3><p>Pixel-perfect on every screen — phones, tablets, laptops and large displays.</p></article>
+      <article class="card reveal"><div class="ic"><i class="fas fa-object-group"></i></div><h3>UI/UX Design</h3><p>Intuitive interfaces and user flows for websites and mobile apps, designed in Figma.</p></article>
+      <article class="card reveal"><div class="ic"><i class="fas fa-gauge-high"></i></div><h3>Optimization</h3><p>Faster load times and cleaner code so visitors stay and search engines notice.</p></article>
+      <article class="card reveal"><div class="ic"><i class="fab fa-whatsapp"></i></div><h3>WhatsApp Integration</h3><p>Turn visitors into enquiries with one-tap WhatsApp chat and pre-filled forms.</p></article>
     </div>
   </div>
 </section>
 
-<!-- Technologies -->
-<section id="technologies" class="section text-center">
+<!-- ===== Skills ===== -->
+<section class="section skills" id="skills">
   <div class="container">
-
-    <!-- 🔥 CLICK BUTTON -->
-    <h2 class="myskills-title" onclick="togglemyskills()">
-      My Skills ⬇️
-    </h2>
-
-    <!-- 🔽 DROPDOWN CONTENT -->
-    <div id="myskillsContent" class="myskills-content">
-
-      <!-- TECHNOLOGIES -->
-      <h4 class="mt-4">Technologies</h4>
-      <div class="row g-4">
-        <div class="col-md-3 col-6">
-          <div class="service-box">
-            <i class="fab fa-html5 icon" style="color:#E34F26;"></i>
-            <h6 class="mt-2">HTML</h6>
-          </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-          <div class="service-box">
-            <i class="fab fa-css3-alt icon" style="color:#1572B6;"></i>
-            <h6 class="mt-2">CSS</h6>
-          </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-          <div class="service-box">
-            <i class="fab fa-js icon" style="color:#F7DF1E;"></i>
-            <h6 class="mt-2">JavaScript</h6>
-          </div>
-        </div>
-      </div>
-
-      <!-- FRAMEWORKS -->
-      <h4 class="mt-5">Frameworks</h4>
-      <div class="row g-4">
-        <div class="col-md-3 col-6">
-          <div class="service-box">
-            <i class="fab fa-bootstrap icon" style="color:#7952B3;"></i>
-            <h6 class="mt-2">Bootstrap</h6>
-          </div>
-        </div>
-      </div>
-
-      <!-- TOOLS -->
-      <h4 class="mt-5">Tools</h4>
-      <div class="row g-4">
-
-        <div class="col-md-3 col-6">
-          <div class="service-box">
-            <i class="fab fa-figma icon" style="color:#F24E1E;"></i>
-            <h6 class="mt-2">Figma</h6>
-          </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-          <div class="service-box">
-            <i class="fas fa-pencil-ruler icon" style="color:#FF61F6;"></i>
-            <h6 class="mt-2">Adobe XD</h6>
-          </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-          <div class="service-box">
-            <i class="fas fa-palette icon" style="color:#FF9A00;"></i>
-            <h6 class="mt-2">Illustrator</h6>
-          </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-          <div class="service-box">
-            <i class="fas fa-paint-brush icon" style="color:#00C4CC;"></i>
-            <h6 class="mt-2">Canva</h6>
-          </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-          <div class="service-box">
-            <i class="fas fa-fire icon" style="color:#FF6F00;"></i>
-            <h6 class="mt-2">Firefly</h6>
-          </div>
-        </div>
-
-        <div class="col-md-3 col-6">
-          <div class="service-box">
-            <i class="fas fa-microphone icon" style="color:#7B61FF;"></i>
-            <h6 class="mt-2">ElevenLabs</h6>
-          </div>
-        </div>
-
-        <!-- VS CODE -->
-        <div class="col-md-3 col-6">
-          <div class="service-box">
-            <i class="fas fa-code icon" style="color:#007ACC;"></i>
-            <h6 class="mt-2">VS Code</h6>
-          </div>
-        </div>
-
-      </div>
-
+    <div class="section-head reveal">
+      <span class="eyebrow">Toolkit</span>
+      <h2>My Skills</h2>
+      <p>The technologies and tools I use to design and build.</p>
     </div>
-
-  </div>
-</section>
-
-<!-- Portfolio -->
-<!-- <section id="portfolio" class="section text-center">
-  <div class="container">
-    <h2>My Work</h2>
-
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="portfolio-card">
-          <img src="images/project1.jpg">
-          <div class="overlay">Wedding Website</div>
+    <div class="skill-groups">
+      <div class="skill-group reveal">
+        <h3>Technologies</h3>
+        <div class="skill-list">
+          <span class="skill"><i class="fab fa-html5" style="color:#E34F26"></i>HTML</span>
+          <span class="skill"><i class="fab fa-css3-alt" style="color:#1572B6"></i>CSS</span>
+          <span class="skill"><i class="fab fa-js" style="color:#F7DF1E"></i>JavaScript</span>
         </div>
       </div>
-
-      <div class="col-md-4">
-        <div class="portfolio-card">
-          <img src="images/project2.jpg">
-          <div class="overlay">Invitation Design</div>
+      <div class="skill-group reveal">
+        <h3>Frameworks</h3>
+        <div class="skill-list">
+          <span class="skill"><i class="fab fa-bootstrap" style="color:#9b6cf0"></i>Bootstrap</span>
         </div>
       </div>
-
-      <div class="col-md-4">
-        <div class="portfolio-card">
-          <img src="images/project3.jpg">
-          <div class="overlay">Business Website</div>
+      <div class="skill-group reveal">
+        <h3>Tools</h3>
+        <div class="skill-list">
+          <span class="skill"><i class="fab fa-figma" style="color:#F24E1E"></i>Figma</span>
+          <span class="skill"><i class="fas fa-pencil-ruler" style="color:#FF61F6"></i>Adobe XD</span>
+          <span class="skill"><i class="fas fa-bezier-curve" style="color:#FF9A00"></i>Illustrator</span>
+          <span class="skill"><i class="fas fa-paint-brush" style="color:#00C4CC"></i>Canva</span>
+          <span class="skill"><i class="fas fa-fire" style="color:#FF6F00"></i>Firefly</span>
+          <span class="skill"><i class="fas fa-microphone" style="color:#9d8bff"></i>ElevenLabs</span>
+          <span class="skill"><i class="fas fa-code" style="color:#3ea6ff"></i>VS Code</span>
         </div>
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
-<!-- Case Studies -->
-<section id="case-study" class="section">
+<!-- ===== Case Studies ===== -->
+<section class="section" id="work">
   <div class="container">
-
-    <h2 class="text-center">Case Studies</h2>
-
-    <!-- Project 1 -->
-    <div class="row align-items-center mb-5">
-      <div class="col-lg-6">
-        <img src="images/images.png" class="img-fluid rounded">
-      </div>
-
-      <div class="col-lg-6">
-        <h4>Wedding Photography Website</h4>
-        <p><strong>Problem:</strong> Client needed an attractive online presence.</p>
-        <p><strong>Solution:</strong> Built responsive site with gallery + WhatsApp.</p>
-        <p><strong>Result:</strong> Increased inquiries and visibility.</p>
-        <a href="https://webcraftstudioin.github.io/Images-Studio/" class="btn btn-orange">View Project</a>
-      </div>
+    <div class="section-head reveal">
+      <span class="eyebrow">Selected work</span>
+      <h2>Case Studies</h2>
+      <p>A few recent projects — the challenge, what I built, and the outcome.</p>
     </div>
 
-    <!-- Project 2 -->
-    <div class="row align-items-center mb-5 flex-lg-row-reverse">
-      <div class="col-lg-6">
-        <img src="images/invitation.png" class="img-fluid rounded">
-      </div>
+    <div class="cases">
+      <!-- 01 -->
+      <article class="case reveal">
+        <div class="case-media"><div class="frame"><img src="images/images.png" alt="Wedding photography website preview" loading="lazy"></div></div>
+        <div>
+          <span class="case-num">01 <span class="case-tag">Website</span></span>
+          <h3>Wedding Photography Website</h3>
+          <div class="psr">
+            <div><b>Problem</b><p>The client needed an attractive online presence.</p></div>
+            <div><b>Solution</b><p>Built a responsive site with a photo gallery and WhatsApp enquiries.</p></div>
+            <div><b>Result</b><p>Increased inquiries and visibility.</p></div>
+          </div>
+          <a href="https://webcraftstudioin.github.io/Images-Studio/" target="_blank" rel="noopener" class="btn btn-primary">View Project <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </article>
 
-      <div class="col-lg-6">
-        <h4>Digital Invitation Website</h4>
-        <p><strong>Problem:</strong> Needed modern invitation.</p>
-        <p><strong>Solution:</strong> Created interactive website.</p>
-        <p><strong>Result:</strong> Easy sharing + unique experience.</p>
-        <a href="https://webcraftstudioin.github.io/Venkatesh-Kavya-Wedding-Invitation/" class="btn btn-orange">View Project</a>
-      </div>
-    </div>
+      <!-- 02 -->
+      <article class="case reverse reveal">
+        <div class="case-media"><div class="frame"><img src="images/invitation.png" alt="Digital wedding invitation website preview" loading="lazy"></div></div>
+        <div>
+          <span class="case-num">02 <span class="case-tag">Invitation</span></span>
+          <h3>Digital Invitation Website</h3>
+          <div class="psr">
+            <div><b>Problem</b><p>The couple wanted a modern alternative to printed invitations.</p></div>
+            <div><b>Solution</b><p>Created an interactive invitation website.</p></div>
+            <div><b>Result</b><p>Easy sharing and a unique experience for guests.</p></div>
+          </div>
+          <a href="https://webcraftstudioin.github.io/Venkatesh-Kavya-Wedding-Invitation/" target="_blank" rel="noopener" class="btn btn-primary">View Project <i class="fas fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </article>
 
-    <!-- Project 3 -->
-    <div class="row align-items-center mb-5">
-      <div class="col-lg-6">
-        <img src="images/liquor.png" class="img-fluid rounded">
-      </div>
+      <!-- 03 -->
+      <article class="case reveal">
+        <div class="case-media"><div class="frame"><img src="images/liquor.png" alt="Liquor delivery mobile app UI preview" loading="lazy"></div></div>
+        <div>
+          <span class="case-num">03 <span class="case-tag">Mobile UI/UX</span></span>
+          <h3>Liquor Delivery Mobile Application</h3>
+          <div class="psr">
+            <div><b>Problem</b><p>Customers found it difficult to locate nearby liquor stores, check product availability, and place orders conveniently.</p></div>
+            <div><b>Solution</b><p>Designed a modern mobile app that lets users:</p>
+              <ul>
+                <li><i class="fas fa-check"></i>Browse nearby liquor stores</li>
+                <li><i class="fas fa-check"></i>View available products and pricing</li>
+                <li><i class="fas fa-check"></i>Place orders easily through a simple UI</li>
+                <li><i class="fas fa-check"></i>Track orders in real time</li>
+              </ul>
+            </div>
+            <div><b>Result</b><p>Improved user convenience and faster ordering.</p></div>
+          </div>
+          <a href="https://www.behance.net/gallery/242171593/Liquor-Delivery-Mobile-Application" target="_blank" rel="noopener" class="btn btn-primary">View on Behance <i class="fab fa-behance"></i></a>
+        </div>
+      </article>
 
-      <div class="col-lg-6">
-        <h4>Liquor Delivery Mobile Application</h4>
-        <p><strong>Problem:</strong> Customers found it difficult to locate nearby liquor stores, check product availability, and place orders conveniently.</p>
-        <p><strong>Solution:</strong> Designed a modern mobile application that allows users to: </p>
-           <li>Browse nearby liquor stores</li>
-<li>View available products and pricing</li>
-<li>Place orders easily through a simple UI</li>
-<li>Track orders in real-time</li></p>
-        <p><strong>Result:</strong> Improved user convenience and faster ordering</p>
-        <a href="https://www.behance.net/gallery/242171593/Liquor-Delivery-Mobile-Application" class="btn btn-orange">View Project</a>
-      </div>
-    </div>
-
-
-<!-- AI VIDEO SECTION -->
-<section id="ai-videos" class="section">
-  <div class="container">
-
-    <h2 class="text-center mb-5">AI Video Creations</h2>
-
-    <div class="row align-items-center mb-5">
-
-      <!-- VIDEO -->
-      <div class="col-lg-6">
+      <!-- 04 AI Video -->
+      <article class="case reverse reveal" id="ai-videos">
         <div class="video-card">
-
-          <video class="video-preview" src="final video.mp4"></video>
-
-          <!-- PLAY BUTTON -->
-          <div class="play-btn" onclick="playVideo(this)">
-            <i class="fas fa-play"></i>
-          </div>
-
+          <video class="video-preview" src="final video.mp4" preload="metadata" playsinline></video>
+          <button class="play-btn" aria-label="Play video"><i class="fas fa-play"></i></button>
         </div>
-      </div>
-
-      <!-- CONTENT -->
-      <div class="col-lg-6">
-        <h4>AI Video for Educational Platform</h4>
-
-        <p><strong>Problem:</strong> Clients needed an engaging way to explain services and answer common questions quickly.</p>
-
-        <p><strong>Solution:</strong> Created an AI-powered video with:</p>
-        <ul>
-          <li>Script-based structured storytelling</li>
-          <li>Natural AI voiceover</li>
-          <li>Modern visuals and transitions</li>
-          <li>Fast production using AI tools</li>
-        </ul>
-
-        <p><strong>Result:</strong> Improved engagement, better understanding, and faster content delivery.</p>
-
-
-        <a href="#" class="btn btn-orange">View More Videos</a>
-      </div>
-
+        <div>
+          <span class="case-num">04 <span class="case-tag">AI Video</span></span>
+          <h3>AI Video for an Educational Platform</h3>
+          <div class="psr">
+            <div><b>Problem</b><p>The client needed an engaging way to explain services and answer common questions quickly.</p></div>
+            <div><b>Solution</b><p>Created an AI-powered video with:</p>
+              <ul>
+                <li><i class="fas fa-check"></i>Script-based, structured storytelling</li>
+                <li><i class="fas fa-check"></i>Natural AI voiceover</li>
+                <li><i class="fas fa-check"></i>Modern visuals and transitions</li>
+                <li><i class="fas fa-check"></i>Fast production using AI tools</li>
+              </ul>
+            </div>
+            <div><b>Result</b><p>Improved engagement, better understanding, and faster content delivery.</p></div>
+          </div>
+        </div>
+      </article>
     </div>
 
+    <div class="more reveal">
+      <a href="https://www.behance.net/shashankurs/projects" target="_blank" rel="noopener" class="btn btn-ghost">See more projects on Behance <i class="fas fa-arrow-right"></i></a>
+    </div>
   </div>
 </section>
 
- 
-
-    <!-- View More Button -->
-    <div class="text-center mt-5">
-      <a href="https://www.behance.net/shashankurs/projects" class="btn btn-orange btn-lg">View More Projects</a>
-    </div>
-
-  </div>
-</section>
-
-
-
-<!-- <div class="text-center mt-5">
-  <a href="#" class="btn btn-orange btn-lg">View More Projects</a>
-</div> -->
-
-<!-- Contact -->
-
-<form class="contact-form">
-<section id="contact" class="section text-center">
+<!-- ===== Contact ===== -->
+<section class="section" id="contact">
   <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Get in touch</span>
+      <h2>Let's build something great</h2>
+      <p>Tell me about your project and I'll get back to you with pricing and a timeline.</p>
+    </div>
 
-    <h2>Contact Us</h2>
+    <div class="contact-grid">
+      <aside class="contact-info reveal">
+        <h3>Start a project</h3>
+        <p>Websites, digital invitations, UI/UX or WhatsApp integration — let's talk about what you need.</p>
+        <div class="contact-item">
+          <div class="ic"><i class="fab fa-whatsapp"></i></div>
+          <div><small>WhatsApp</small><a href="https://wa.me/919916118623" target="_blank" rel="noopener">+91 99161 18623</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="ic"><i class="fas fa-envelope"></i></div>
+          <div><small>Email</small><a href="mailto:developerfrontend89@gmail.com">developerfrontend89@gmail.com</a></div>
+        </div>
+        <div class="socials">
+          <a href="https://www.instagram.com/webcraftstudio.in?igsh=cGo0dGhpZ21zN205&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/shashanka-b-c-04702028b/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.behance.net/shashankurs/projects" target="_blank" rel="noopener" aria-label="Behance"><i class="fab fa-behance"></i></a>
+        </div>
+      </aside>
 
-    <div class="contact-box">
-      <form>
-
-        <input type="text" placeholder="Your Name" required>
-
-        <select required>
-          <option disabled selected>Select Service Type</option>
-          <option>Website Design</option>
-          <option>Web Development</option>
-          <option>Responsive Design</option>
-          <option>Digital Invitation</option>
-          <option>WhatsApp Integration</option>
-
-        </select>
-
-        <textarea rows="5" placeholder="Your Message"></textarea>
-
-        <button type="submit">Submit</button>
-
+      <form class="form contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" type="text" placeholder="John Doe" required>
+          </div>
+          <div class="field">
+            <label for="service">Service</label>
+            <select id="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option>Website Design</option>
+              <option>Web Development</option>
+              <option>Responsive Design</option>
+              <option>Digital Invitation</option>
+              <option>WhatsApp Integration</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">Project details</label>
+          <textarea id="message" placeholder="Tell me a little about your project…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Send via WhatsApp</button>
+        <p class="form-note">Opens WhatsApp with your message pre-filled.</p>
       </form>
     </div>
-
   </div>
-
-  </form>
 </section>
 
-<!-- Footer -->
+</main>
+
+<!-- ===== Footer ===== -->
 <footer class="footer">
-
   <div class="container">
-    <div class="row text-start">
-
-      <!-- Logo + About -->
-      <div class="col-lg-4 mb-4">
-        <img src="images/logo.png" class="logo mb-3">
-
-        <p>
-          WebCraft builds modern, responsive websites and digital solutions 
-          to help businesses grow online.
-        </p>
+    <div class="footer-grid">
+      <div>
+        <a href="#home" class="brand"><img src="images/logo.png" alt="WebCraft logo"></a>
+        <p>WebCraft builds modern, responsive websites and digital solutions to help businesses grow online.</p>
       </div>
-
-      <!-- Services -->
-      <div class="col-lg-4 mb-4">
-        <h5>Services</h5>
-
-        <ul class="footer-links">
+      <div>
+        <h4>Services</h4>
+        <ul>
           <li>Website Design</li>
           <li>Web Development</li>
           <li>UI/UX Design</li>
           <li>Digital Invitations</li>
         </ul>
       </div>
-
-      <!-- Social + Contact -->
-      <div class="col-lg-4 mb-4">
-        <h5>Connect</h5>
-
-        <div class="social-icons mt-3">
-
-          <a href="https://www.instagram.com/webcraftstudio.in?igsh=cGo0dGhpZ21zN205&utm_source=qr" target="_blank">
-            <i class="fab fa-instagram"></i>
-          </a>
-
-          <a href="https://www.linkedin.com/in/shashanka-b-c-04702028b/" target="_blank">
-            <i class="fab fa-linkedin"></i>
-          </a>
-
-          <a href="https://www.behance.net/shashankurs/projects" target="_blank">
-            <i class="fab fa-behance"></i>
-          </a>
-
-        </div>
-
-        <p class="mt-3">📧 developerfrontend89@gmail.com</p>
+      <div>
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#work">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-
     </div>
-
-    <!-- Bottom -->
-   <p>Designed & Developed by <a href="https://www.instagram.com/webcraftstudio.in?igsh=cGo0dGhpZ21zN205&utm_source=qr" target="_blank" style="color:#ff7a00; text-decoration:none;">Shashanka</a></p>
-
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> WebCraft. All rights reserved.</span>
+      <span>Designed &amp; developed by <a href="https://www.instagram.com/webcraftstudio.in?igsh=cGo0dGhpZ21zN205&utm_source=qr" target="_blank" rel="noopener">Shashanka</a></span>
+    </div>
   </div>
-
 </footer>
 
-<!-- WhatsApp -->
-<a class="whatsapp"
-href="https://wa.me/919916118623?text=Hello, I would like to inquire about your web design and development services.
-
-Kindly share your pricing, timeline, and process.
-
-Thank you."
-target="_blank">
-    <img src="images/whatsapp.svg" width="30">
+<!-- WhatsApp float -->
+<a class="whatsapp" aria-label="Chat on WhatsApp" target="_blank" rel="noopener"
+   href="https://wa.me/919916118623?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20web%20design%20and%20development%20services.%0A%0AKindly%20share%20your%20pricing%2C%20timeline%2C%20and%20process.%0A%0AThank%20you.">
+  <img src="images/whatsapp.svg" alt="">
 </a>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
-<!-- <!....Contact Us...!> -->
-
 <script>
+// Year
+document.getElementById('year').textContent = new Date().getFullYear();
 
+// Navbar background on scroll
+const nav = document.getElementById('nav');
+const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 20);
+onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
 
-  function playVideo(button) {
-  let video = button.previousElementSibling;
-
-  video.setAttribute("controls", true);
-  video.play();
-
-  button.style.display = "none";
-}
-
-
-
-function togglemyskills() {
-  document.getElementById("myskillsContent").classList.toggle("active");
-}
-
-
-
-document.addEventListener("DOMContentLoaded", function(){
-
-const form = document.querySelector(".contact-form");
-
-form.addEventListener("submit", function(e){
-e.preventDefault();
-
-let name = document.querySelector("input[placeholder='Your Name']").value;
-let shoot = document.querySelector("select").value;
-let message = document.querySelector("textarea").value;
-
-let whatsappMessage = `Hi Shashanka, I saw your WebCraft portfolio.
-
-Name: ${name}
-Service: ${shoot}
-Message: ${message}
-
-Please share details and pricing.`;
-
-let url = "https://wa.me/919916118623?text=" + encodeURIComponent(whatsappMessage);
-
-window.open(url, "_blank");
-
+// Mobile menu
+const toggle = document.getElementById('navToggle');
+const links = document.getElementById('navLinks');
+toggle.addEventListener('click', () => {
+  const open = links.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', open);
+  toggle.innerHTML = open ? '<i class="fas fa-xmark"></i>' : '<i class="fas fa-bars"></i>';
 });
+links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  links.classList.remove('open');
+  toggle.setAttribute('aria-expanded', false);
+  toggle.innerHTML = '<i class="fas fa-bars"></i>';
+}));
 
+// Video play
+document.querySelectorAll('.play-btn').forEach(btn => btn.addEventListener('click', () => {
+  const video = btn.previousElementSibling;
+  video.controls = true;
+  video.play();
+  btn.style.display = 'none';
+}));
+
+// Reveal on scroll
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// Contact form -> WhatsApp
+document.getElementById('contactForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const service = document.getElementById('service').value;
+  const message = document.getElementById('message').value.trim();
+  const text = `Hi Shashanka, I saw your WebCraft portfolio.\n\nName: ${name}\nService: ${service}\nMessage: ${message}\n\nPlease share details and pricing.`;
+  window.open('https://wa.me/919916118623?text=' + encodeURIComponent(text), '_blank');
 });
 </script>
-
 </body>
 </html>
